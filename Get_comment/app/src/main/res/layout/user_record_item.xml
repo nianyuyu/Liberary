@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/record_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/book_name"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp"
+        android:text="12sp"
+        />
+    <TextView
+        android:id="@+id/record_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/record_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:text="date"
+        android:layout_marginBottom="13dp"
+        />
+    <ImageButton
+        android:id="@+id/delete_record"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="75dp"
+        android:background="@mipmap/pic_delete"/>
+    <ImageButton
+        android:id="@+id/change_record"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/pic_change"/>
+
+</RelativeLayout>
